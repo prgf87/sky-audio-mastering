@@ -55,6 +55,11 @@ const About = () => {
         <h1 className="text-lg pl-4 pt-4">Links</h1>
         <ul className="pl-4 text-center text-blue-500">
           <li>
+            <a href="https://www.krisamadhi.com/" target="blank">
+              https://www.krisamadhi.com/
+            </a>
+          </li>
+          <li>
             <a href="https://www.soundcloud.com/krisamadhi" target="blank">
               https://www.soundcloud.com/krisamadhi
             </a>

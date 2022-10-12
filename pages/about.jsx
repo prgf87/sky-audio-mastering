@@ -6,6 +6,7 @@ import RecentClients from '../components/Clients';
 import Slider from '../components/Slider';
 import ContactBanner from '../components/ContactBanner';
 import { SliderData } from '../components/SliderData';
+import Or from '../components/Or';
 
 const about = () => {
   return (
@@ -23,6 +24,7 @@ const about = () => {
       <About />
       <ContactBanner />
       <RecentClients />
+      <Or />
     </div>
   );
 };
