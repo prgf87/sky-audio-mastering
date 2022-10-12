@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: 'Comfortaa', cursive, sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-img {
+  background-image: url('../public/images/hero4.jpg');
+  background-position: 50% 20%;
+}
+.custom-img2 {
+  background-image: url('../public/images/bg1.jpg');
+}
+
+.logo-img {
+  background-image: url('../public/images/logo.jpg');
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
