@@ -27,3 +27,9 @@ html {
   height: auto;
   object-fit: contain;
 }
+
+@media (pointer: fine) {
+  body {
+    background-attachment: fixed;
+  }
+}
