@@ -7,11 +7,10 @@ import { ClientsData } from '../components/ClientsData';
 import Services from '../components/Services';
 import ContactBanner from '../components/ContactBanner';
 import Or from '../components/Or';
-// import VideoBg from '../components/VideoBg';
 
 const Home = () => {
   return (
-    <div className="bg-black bg-cover text-white">
+    <div className="bg-black text-white custom-img2 w-full bg-contain">
       <Head>
         <title>Sky Mastering</title>
         <meta name="Sky Audio Mastering" content="Created by Pedro Ferreira" />
@@ -22,7 +21,6 @@ const Home = () => {
         message="Specializing in Streaming, Audiophile and Large PA Analog Mastering"
       />
       <Slider slides={SliderData} />
-      {/* <VideoBg /> */}
       <Services />
       <ContactBanner />
       <Clients client={ClientsData} />

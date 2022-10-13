@@ -6,7 +6,7 @@ const Hero = ({ heading, message }) => {
     <div>
       <div className="flex items-center justify-center h-screen mb-12 bg-center bg-cover">
         <video
-          src="/video/skymastering.mp4"
+          src="/video/skymaster2.mov"
           type="video/mp4"
           autoPlay
           loop

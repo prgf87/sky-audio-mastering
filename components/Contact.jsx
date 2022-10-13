@@ -61,7 +61,7 @@ const ContactForm = () => {
         <form
           action="https://getform.io/f/6f47388d-a281-4a54-a067-b96932b002cf"
           method="POST"
-          className="max-w-[600px] m-auto text-black"
+          className="max-w-[800px] m-auto text-black"
         >
           <div className="grid grid-cols-2">
             <label>
@@ -88,16 +88,16 @@ const ContactForm = () => {
                 type="text"
                 name="message"
                 className="border shadow-lg p-3 w-full"
-                rows="10"
+                rows="12"
                 cols="30"
                 placeholder="Place your message here"
               />
             </label>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <button
               type="submit"
-              className="px-8 py-2 border shadow-lg p-3 w-full text-gray-300"
+              className="px-8 py-2 border p-3 w-1/2 text-white hover:scale-110 transition transform hover:gray-300"
             >
               Submit
             </button>
