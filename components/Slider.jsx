@@ -24,7 +24,7 @@ const Slider = ({ slides }) => {
       <div className="relative flex text-center">
         <FaArrowCircleLeft
           onClick={prevSlide}
-          size={50}
+          size={30}
           className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-125 transition-transform hover:text-white/80"
         />
         {SliderData.map((slide, index) => {
@@ -52,7 +52,7 @@ const Slider = ({ slides }) => {
         })}
         <FaArrowCircleRight
           onClick={nextSlide}
-          size={50}
+          size={30}
           className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-125 transition-transform hover:text-white/80"
         />
       </div>
