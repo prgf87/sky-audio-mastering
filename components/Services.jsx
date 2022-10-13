@@ -6,7 +6,7 @@ const Services = () => {
       <div id="services" className="relative top-[-80px]"></div>
       <div className="scroll-smooth">
         <div className="max-w-[1240px] min-h-[10rem] mx-auto grid grid-cols-1 font-bold p-2 mt-4 mb-6">
-          <div className="mx-auto sm:pl-20 w-full grid text-left md:text-center border-t-2">
+          <div className="mx-auto sm:pl-20 w-full grid text-left md:text-center border-none md:border-t-2">
             <div className="p-2">
               <h1 className="text-3xl md:text-4xl font-bold pb-2 pt-4 px-2">
                 Audio Mastering
@@ -18,7 +18,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="min-h-[10rem] mx-auto sm:pl-20 w-full grid text-left md:text-center border-x-2">
+          <div className="min-h-[10rem] mx-auto sm:pl-20 w-full grid text-left md:text-center border-none md:border-x-2">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold p-4">Hardware</h1>{' '}
               <div>
@@ -46,8 +46,8 @@ const Services = () => {
             className="hidden md:block object-cover h-[30rem] w-full"
           />
         </div>
-        <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-8 border-b-2">
-          <div className="text-center pt-6 px-6 border-x-2">
+        <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-2 lg:px-6 border-none lg:border-b-2">
+          <div className="text-center pt-6 px-2 lg:px-6 border-none md:border-x-2">
             <h1 className="text-2xl lg:text-4xl font-bold p-2 pb-2">Prices</h1>
             <div className="p-6">
               <h2 className="text-lg lg:text-2xl font-bold">

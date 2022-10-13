@@ -35,23 +35,23 @@ const Navbar = () => {
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold text-xl sm:text-3xl cursor-pointer hover:scale-105 transition transform"
+            className="font-bold text-xl sm:text-3xl cursor-pointer hover:scale-125 hover:text-gray-500 transition transform"
           >
             Sky Mastering
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4 hover:scale-125 transition transform">
+          <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
             <Link href="/">Home</Link>
           </li>
 
-          <li className="p-4 hover:scale-125 transition transform">
+          <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
             <Link href="/#services">Services</Link>
           </li>
-          <li className="p-4 hover:scale-125 transition transform">
+          <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
             <Link href="/about">About</Link>
           </li>
-          <li className="p-4 hover:scale-125 transition transform">
+          <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
@@ -61,7 +61,7 @@ const Navbar = () => {
         >
           <Link href="https://www.facebook.com/Skyaudiomastering">
             <a
-              className="cursor-pointer hover:scale-125 transition transform"
+              className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
               <BsFacebook size={30} />
@@ -69,7 +69,7 @@ const Navbar = () => {
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
             <a
-              className="cursor-pointer hover:scale-125 transition transform"
+              className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
               <BsInstagram size={30} />

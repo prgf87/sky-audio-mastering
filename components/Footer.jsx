@@ -8,19 +8,21 @@ const Footer = () => {
       <div className="flex items-center justify-between px-4 pb-4">
         <div className="flex justify-center items-end gap-4 px-4">
           <Link href="https://www.facebook.com/Skyaudiomastering">
-            <a className="cursor-pointer">
+            <a className="cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
               <BsFacebook size={30} />
             </a>
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
-            <a className="cursor-pointer">
+            <a className="cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
               <BsInstagram size={30} />
             </a>
           </Link>
         </div>
 
-        <div className="flex items-center justify-center p-4 text-sm sm:text-lg">
-          <p>Sky Mastering ©</p>
+        <div className="flex items-center justify-center p-4 text-sm sm:text-lg cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
+          <p>
+            <a href="/">Sky Mastering ©</a>
+          </p>
         </div>
       </div>
     </div>

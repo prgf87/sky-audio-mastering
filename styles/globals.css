@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.normal-scroll {
+  scroll-behavior: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,17 +26,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: 50% 80%;
-}
-.custom-img2 {
-  background-image: url('../public/images/bg1.jpg');
-}
-
-.logo-img {
-  background-image: url('../public/images/logo.jpg');
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  object-position: 50% 15%;
 }
 
 @media (pointer: fine) {
