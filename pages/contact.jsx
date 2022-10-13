@@ -7,7 +7,7 @@ import Or from '../components/Or';
 
 const contact = () => {
   return (
-    <div className="bg-black text-white custom-img2 w-full bg-contain">
+    <div className="bg-black text-white custom-img2 w-full bg-fill md:bg-contain">
       <Head>
         <title>Sky Mastering</title>
         <meta name="Sky Mastering App" content="Created by Pedro Ferreira" />
