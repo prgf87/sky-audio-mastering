@@ -42,8 +42,8 @@ const Slider = ({ slides }) => {
                   src={slide.image}
                   alt="/"
                   width="1240"
-                  height="600"
-                  objectFit="cover"
+                  height="800"
+                  objectFit="contain"
                   objectPosition={slide.position}
                 />
               )}

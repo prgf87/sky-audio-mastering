@@ -1,5 +1,9 @@
 export const SliderData = [
   {
+    image: '/images/hero4.jpg',
+    position: '50% 18%',
+  },
+  {
     image: '/images/hero1.jpg',
     position: '50% 50%',
   },

@@ -7,13 +7,14 @@ import { ClientsData } from '../components/ClientsData';
 import Services from '../components/Services';
 import ContactBanner from '../components/ContactBanner';
 import Or from '../components/Or';
+// import VideoBg from '../components/VideoBg';
 
 const Home = () => {
   return (
     <div className="bg-black bg-cover text-white">
       <Head>
         <title>Sky Mastering</title>
-        <meta name="Sky Mastering App" content="Created by Pedro Ferreira" />
+        <meta name="Sky Audio Mastering" content="Created by Pedro Ferreira" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -21,6 +22,7 @@ const Home = () => {
         message="Specializing in Streaming, Audiophile and Large PA Analog Mastering"
       />
       <Slider slides={SliderData} />
+      {/* <VideoBg /> */}
       <Services />
       <ContactBanner />
       <Clients client={ClientsData} />
