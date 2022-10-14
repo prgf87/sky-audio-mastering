@@ -46,7 +46,7 @@ const Services = () => {
             className="hidden md:block object-cover h-[30rem] w-full"
           />
         </div>
-        <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-2 lg:px-6 border-none lg:border-b-2">
+        <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-2 lg:px-6">
           <div className="text-center pt-6 px-2 lg:px-6 border-none md:border-x-2">
             <h1 className="text-2xl lg:text-4xl font-bold p-2 pb-2">Prices</h1>
             <div className="p-6">
