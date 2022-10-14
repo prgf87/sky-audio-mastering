@@ -6,7 +6,7 @@ const Hero = ({ heading, message }) => {
     <div>
       <div className="flex items-center justify-center h-screen mb-8 bg-center bg-cover  ">
         <video
-          src="/video/skymaster5.mp4"
+          src="/video/skymaster5.mov"
           type="video/mp4"
           playsinline
           autoPlay
