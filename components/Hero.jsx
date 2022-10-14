@@ -4,9 +4,9 @@ import Button from './Button';
 const Hero = ({ heading, message }) => {
   return (
     <div>
-      <div className="flex items-center justify-center h-screen mb-12 bg-center bg-cover ">
+      <div className="flex items-center justify-center h-screen mb-12 bg-center bg-cover  ">
         <video
-          src="/video/skymaster2.mov"
+          src="/video/skymaster5.mp4"
           type="video/mp4"
           autoPlay
           loop

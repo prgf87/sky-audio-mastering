@@ -53,7 +53,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact">
+    <div>
+      <div id="contact" className="relative top-[-150px]"></div>
       <div className="max-w-[1240px] mx-auto pb-8 max-h-screen text-sm sm:text-lg">
         <h1 className="text-2xl font-bold text-center pb-4">
           Let's work together

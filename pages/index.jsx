@@ -14,7 +14,7 @@ const Home = () => {
       <Head>
         <title>Sky Mastering</title>
         <meta name="Sky Audio Mastering" content="Created by Pedro Ferreira" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero
         heading="Welcome to Sky Mastering"

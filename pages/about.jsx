@@ -14,7 +14,7 @@ const about = () => {
       <Head>
         <title>Sky Mastering</title>
         <meta name="Sky Mastering App" content="Created by Pedro Ferreira" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero
         heading={'About'}
