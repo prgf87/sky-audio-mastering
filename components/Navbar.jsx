@@ -49,10 +49,10 @@ const Navbar = () => {
             <Link href="/#services">Services</Link>
           </li>
           <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
-            <Link href="/about">About</Link>
+            <Link href="/about/#about">About</Link>
           </li>
           <li className="p-4 hover:scale-110 hover:text-gray-500 transition transform">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact/#contact">Contact</Link>
           </li>
         </ul>
         <div
@@ -112,13 +112,13 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500 hover:scale-125 transition transform"
             >
-              <Link href="/about">About</Link>
+              <Link href="/about/#about">About</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500 hover:scale-125 transition transform"
             >
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact/#contact">Contact</Link>
             </li>
             <li>
               <div className="flex justify-center items-end gap-4 p-4 ">

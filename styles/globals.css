@@ -22,6 +22,11 @@ html.normal-scroll {
   background-position: 50% 20%;
 }
 
+.custom-img2 {
+  background-image: url('../public/images/bg2.jpg');
+  background-position: 50% 23%;
+}
+
 video {
   width: 100%;
   height: 100%;
