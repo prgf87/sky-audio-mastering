@@ -5,7 +5,7 @@ import { useState } from 'react';
 const Button = () => {
   const [effect, setEffect] = useState(false);
   return (
-    <div className="w-full flex justify-center items-center hover:scale-125 transition transform">
+    <div className="w-full flex justify-center items-center hover:scale-110 transition transform">
       <Link href="/contact">
         <button
           className={`${

@@ -1,11 +1,31 @@
 export const ClientsData = [
   {
-    image: '/images/client1.jpg',
-    url: 'https://mindspringmusic.bandcamp.com/album/cloudburst-compiled-by-kri-samadhi',
+    image: '/images/client19.jpg',
+    url: 'https://music.apple.com/us/album/experience-israeli-and-jewish-culture/449970191',
+  },
+  {
+    image: '/images/client20.jpg',
+    url: 'https://southronrancor1.bandcamp.com/releases',
+  },
+  {
+    image: '/images/client21.jpg',
+    url: 'https://walkerfarrell.bandcamp.com/album/music-for-0-musicians-2022-remaster',
+  },
+  {
+    image: '/images/client22.jpg',
+    url: 'https://thevoltperoctaves.com/albums/',
+  },
+  {
+    image: '/images/client23.jpg',
+    url: 'https://www.youtube.com/watch?v=CELrul5Xld0',
   },
   {
     image: '/images/client2.jpg',
     url: 'https://xibalba.bandcamp.com/album/oblation',
+  },
+  {
+    image: '/images/client1.jpg',
+    url: 'https://mindspringmusic.bandcamp.com/album/cloudburst-compiled-by-kri-samadhi',
   },
   {
     image: '/images/client3.jpg',
@@ -70,5 +90,9 @@ export const ClientsData = [
   {
     image: '/images/client18.jpg',
     url: 'https://tonyrolando.bandcamp.com/track/vaaaaanished',
+  },
+  {
+    image: '/images/client24.jpg',
+    url: 'https://touchsamadhi.bandcamp.com/album/infinite-moments',
   },
 ];
