@@ -4,11 +4,11 @@ import Button from './Button';
 const Hero = ({ heading, message }) => {
   return (
     <div>
-      <div className="flex items-center justify-center h-screen mb-8 bg-center bg-cover  ">
+      <div className="flex items-center justify-center h-screen mb-8 bg-center bg-cover">
         <video
           src="/video/skymaster5.mov"
           type="video/mp4"
-          playsinline
+          playsInLine
           autoPlay
           loop
           muted
