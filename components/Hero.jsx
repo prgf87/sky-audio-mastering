@@ -7,16 +7,17 @@ const Hero = ({ heading, message }) => {
       <div className="flex items-center justify-center h-screen mb-4 bg-center bg-cover">
         <video
           poster="/images/gallery5.jpg"
-          src="/video/skymaster6sec1.mp4"
-          type="video/mp4"
-          playsinline
+          muted
+          controls
+          playsInLine
+          disablePictureInPicture
           autoPlay
           loop
-          muted
           width="100%"
-          controls
-          disablePictureInPicture
-        />
+        >
+          <source src="/video/skymaster6sec1.mp4" type="video/mp4" />
+        </video>
+
         {/*Outlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
         <div className="absolute grid grid-cols-1 mx-auto p-5 text-white z-[2] mt-[2rem]">
