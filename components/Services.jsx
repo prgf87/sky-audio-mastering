@@ -58,6 +58,9 @@ const Services = () => {
               <p className="text-sm">
                 Delievered digitally in 48kHz 24 Bit WAV files
               </p>
+              <p className="text-lg lg:text-xl pt-2">
+                Additonal Streaming Version +$25.00
+              </p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 text-center px-6">
@@ -74,12 +77,8 @@ const Services = () => {
               <h1 className="text-lg lg:text-2xl font-bold">Additionals</h1>
               <p className="text-sm lg:text-lg">MP3 Files +$5.00</p>
               <p className="text-sm lg:text-lg">16/44 WAV Files +$5.00</p>
-              <p className="text-sm lg:text-lg">
-                Additonal Streaming Version +$25.00
-              </p>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </>

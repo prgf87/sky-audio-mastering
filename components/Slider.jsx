@@ -24,8 +24,8 @@ const Slider = ({ slides }) => {
       <div className="relative flex text-center">
         <FaArrowCircleLeft
           onClick={prevSlide}
-          size={30}
-          className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-125 transition-transform hover:text-white/80"
+          size={50}
+          className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
         />
         {SliderData.map((slide, index) => {
           return (
@@ -42,7 +42,7 @@ const Slider = ({ slides }) => {
                   src={slide.image}
                   alt="/"
                   width="1240"
-                  height="700"
+                  height="900"
                   objectFit="contain"
                   objectPosition={slide.position}
                 />
@@ -52,8 +52,8 @@ const Slider = ({ slides }) => {
         })}
         <FaArrowCircleRight
           onClick={nextSlide}
-          size={30}
-          className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-125 transition-transform hover:text-white/80"
+          size={50}
+          className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
         />
       </div>
     </div>
