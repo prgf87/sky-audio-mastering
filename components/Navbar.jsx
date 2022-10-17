@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold text-md sm:text-xl md:text-3xl cursor-pointer hover:scale-110 transition transform"
+            className="font-bold text-md sm:text-xl md:text-3xl cursor-pointer hover:scale-105   transition transform"
           >
             Sky Mastering
           </h1>

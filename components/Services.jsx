@@ -5,7 +5,7 @@ const Services = () => {
     <>
       <div id="services" className="relative top-[-80px]"></div>
       <div className="scroll-smooth">
-        <div className="max-w-[1240px] min-h-[10rem] mx-auto grid grid-cols-1 font-bold p-2 mt-4 mb-6">
+        <div className="max-w-[1240px] min-h-[10rem] mx-auto grid grid-cols-1 font-bold p-2">
           <div className="mx-auto sm:pl-20 w-full grid text-left md:text-center border-none md:border-t-2">
             <div className="p-2">
               <h1 className="text-3xl md:text-4xl font-bold pb-2 pt-4 px-2">
@@ -43,13 +43,13 @@ const Services = () => {
         <div>
           <img
             src="/images/hero6.jpg"
-            className="hidden md:block object-cover h-[30rem] w-full"
+            className="object-cover max-h-[30rem] w-full"
           />
         </div>
         <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-2 lg:px-6">
           <div className="text-center pt-6 px-2 lg:px-6 border-none md:border-x-2">
             <h1 className="text-2xl lg:text-4xl font-bold p-2 pb-2">Prices</h1>
-            <div className="p-6">
+            <div className="p-2">
               <h2 className="text-lg lg:text-2xl font-bold">
                 {' '}
                 Stereo Mastering
@@ -59,24 +59,25 @@ const Services = () => {
                 Delievered digitally in 48kHz 24 Bit WAV files
               </p>
               <p className="text-lg lg:text-xl pt-2">
-                Additonal Streaming Version +$25.00
+                Additonal Streaming Version <br />
+                $25.00
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 text-center px-6">
-            <div className="p-6">
+            <div className="p-2">
               <h1 className="text-lg lg:text-2xl font-bold bor">
                 Stem Mastering
               </h1>
-              <p className="text-lg lg:text-2xl">+ $40.00</p>
+              <p className="text-lg lg:text-2xl">$120.00</p>
               <p className="text-sm">
                 Master from 8 or less stems from the final mix
               </p>
             </div>
-            <div className="p-6">
+            <div className="p-2">
               <h1 className="text-lg lg:text-2xl font-bold">Additionals</h1>
-              <p className="text-sm lg:text-lg">MP3 Files +$5.00</p>
-              <p className="text-sm lg:text-lg">16/44 WAV Files +$5.00</p>
+              <p className="text-sm lg:text-lg">MP3 Files + $5.00</p>
+              <p className="text-sm lg:text-lg">16/44 WAV Files + $5.00</p>
             </div>
           </div>
         </div>

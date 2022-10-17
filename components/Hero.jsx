@@ -10,12 +10,11 @@ const Hero = ({ heading, message }) => {
           muted
           controls
           playsInLine
-          disablePictureInPicture
           autoPlay
           loop
           width="100%"
         >
-          <source src="/video/skymaster6sec1.mp4" type="video/mp4" />
+          <source src="/video/skymaster5.mov" type="video/mp4" />
         </video>
 
         {/*Outlay */}
