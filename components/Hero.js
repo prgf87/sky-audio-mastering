@@ -5,7 +5,7 @@ const Hero = ({ heading, message }) => {
   return (
     <div>
       <div className="flex items-center justify-center h-screen mb-4 bg-center bg-cover">
-        <video muted playsInLine autoPlay loop width="100%">
+        <video muted playsInline autoPlay loop width="100%">
           <source src="/video/skymaster5.mov" type="video/mp4" />
         </video>
 

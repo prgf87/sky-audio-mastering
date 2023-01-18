@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold text-md sm:text-xl md:text-3xl cursor-pointer hover:scale-105   transition transform"
+            className="font-bold text-md sm:text-xl md:text-2xl cursor-pointer hover:scale-105 transition transform"
           >
             Sky Mastering
           </h1>
@@ -67,7 +67,7 @@ const Navbar = () => {
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
-              <BsFacebook size={40} />
+              <BsFacebook size={25} />
             </a>
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
@@ -75,69 +75,74 @@ const Navbar = () => {
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
-              <BsInstagram size={40} />
+              <BsInstagram size={25} />
             </a>
           </Link>
         </div>
 
         {/*Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden z-10">
+        <div
+          onClick={handleNav}
+          className="block absolute right-[15px] top-[15px] sm:hidden z-10"
+        >
           {nav ? (
-            <AiOutlineClose size={40} style={{ color: `${textColor}` }} />
+            <AiOutlineClose size={30} style={{ color: `${textColor}` }} />
           ) : (
-            <AiOutlineMenu size={40} style={{ color: `${textColor}` }} />
+            <AiOutlineMenu size={30} style={{ color: `${textColor}` }} />
           )}
         </div>
 
         {/*Mobile Menu */}
-        <div
-          className={
-            nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in-out duration-500'
-              : 'sm:hidden absolute top-0 left-[100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in-out duration-500'
-          }
-        >
-          <ul>
-            <li
-              onClick={handleNav}
-              className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
-            >
-              <Link href="/">Home</Link>
-            </li>
+        <div className="overscroll-contain">
+          <div
+            className={
+              nav
+                ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in-out duration-500'
+                : 'sm:hidden absolute top-0 left-[100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in-out duration-500'
+            }
+          >
+            <ul>
+              <li
+                onClick={handleNav}
+                className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
+              >
+                <Link href="/">Home</Link>
+              </li>
 
-            <li
-              onClick={handleNav}
-              className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
-            >
-              <Link href="/#services">Services</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
-            >
-              <Link href="/about/#about">About</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
-            >
-              <Link href="/contact/#contact">Contact</Link>
-            </li>
-            <li>
-              <div className="flex justify-center items-end gap-4 p-4 ">
-                <Link href="https://www.facebook.com/Skyaudiomastering">
-                  <a className="cursor-pointer hover:scale-110 transition transform">
-                    <BsFacebook size={40} />
-                  </a>
-                </Link>
-                <Link href="https://www.instagram.com/skymastering/">
-                  <a className="cursor-pointer hover:scale-110 transition transform">
-                    <BsInstagram size={40} />
-                  </a>
-                </Link>
-              </div>
-            </li>
-          </ul>
+              <li
+                onClick={handleNav}
+                className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
+              >
+                <Link href="/#services">Services</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
+              >
+                <Link href="/about/#about">About</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-3xl hover:text-gray-500 hover:scale-110 transition transform"
+              >
+                <Link href="/contact/#contact">Contact</Link>
+              </li>
+              <li>
+                <div className="flex justify-center items-end gap-4 p-4 ">
+                  <Link href="https://www.facebook.com/Skyaudiomastering">
+                    <a className="cursor-pointer hover:scale-110 transition transform">
+                      <BsFacebook size={30} />
+                    </a>
+                  </Link>
+                  <Link href="https://www.instagram.com/skymastering/">
+                    <a className="cursor-pointer hover:scale-110 transition transform">
+                      <BsInstagram size={30} />
+                    </a>
+                  </Link>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
