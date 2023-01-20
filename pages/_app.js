@@ -1,7 +1,6 @@
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
@@ -18,7 +17,7 @@ function useNormalScrollRoutes() {
   }, []);
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   useNormalScrollRoutes();
   return (
     <>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Services = () => {
@@ -6,28 +7,26 @@ const Services = () => {
       <div id="services" className="relative top-[-80px]"></div>
       <div className="scroll-smooth">
         <div className="max-w-[1240px] min-h-[10rem] mx-auto grid grid-cols-1 font-bold p-2">
-          <div className="mx-auto sm:pl-20 w-full grid text-left md:text-center border-none md:border-t-2">
+          <div className="mx-auto sm:pl-20 w-full grid text-center border-none md:border-t-2">
             <div className="p-2">
-              <h1 className="text-3xl md:text-4xl font-bold pb-2 pt-4 px-2">
+              <h1 className="text-2xl md:text-3xl font-bold pb-2 pt-4 px-2">
                 Audio Mastering
               </h1>
-              <p className="Text-sm md:text-lg lg:text-xl p-2 max-w-[720px] lg:max-w-full">
-                W Hybrid mastering studio with Tyler Acoustics D2X’s, Barefoot
+              <p className="Text-sm md:text-md lg:text-lg py-2 lg:px-20 max-w-[720px] lg:max-w-full">
+                Hybrid mastering studio with Tyler Acoustics D2X’s, Barefoot
                 Sound MicroMain27 and Avantone MixCubes
               </p>
             </div>
           </div>
-
-          <div className="min-h-[10rem] mx-auto sm:pl-20 w-full grid text-left md:text-center border-none md:border-x-2">
+          <div className="min-h-[10rem] mx-auto sm:pl-20 w-full grid text-center border-none md:border-x-2">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold p-4">Hardware</h1>{' '}
+              <h1 className="text-2xl md:text-3xl font-bold p-4">Hardware</h1>{' '}
               <div>
-                <div className="text-sm md:text-lg lg:text-xl px-4 pb-4">
+                <div className="text-sm md:text-md lg:text-lg px-4 pb-4">
                   <p>* Louder Than Liftoff Silver Bullet</p>
                   <p>* Neve Portico II Master Buss Processor</p>
                   <p>* Buzzaudio SOC-M</p>
                   <p>* Hendy Amps Michelangelo</p>
-
                   <p>
                     * Heritage Audio SYMPH EQ Master Bus Stereo Asymptotic
                     Equalizer
@@ -39,15 +38,17 @@ const Services = () => {
             </div>{' '}
           </div>
         </div>
-
-        <div>
-          <img
+        <div className="my-6 grid m-auto h-[15rem] md:h-[20rem] lg:h-[30rem]">
+          <Image
             src="/images/hero6.jpg"
-            className="object-cover max-h-[30rem] w-full"
+            height={440.5}
+            width={440.5}
+            className="object-cover"
+            alt="Background Hero Image - Kri Samadhi - Sky Audio Mastering"
           />
         </div>
-        <div className="max-w-[1240px] grid grid-cols-1 mx-auto px-2 lg:px-6">
-          <div className="text-center pt-6 px-2 lg:px-6 border-none md:border-x-2">
+        <div className="max-w-[1240px] grid grid-cols-1 mx-auto text-center px-2 lg:px-6">
+          <div className="pt-6 px-2 lg:px-6 border-none md:border-x-2">
             <h1 className="text-2xl lg:text-4xl font-bold p-2 pb-2">Prices</h1>
             <div className="p-2">
               <h2 className="text-lg lg:text-2xl font-bold">

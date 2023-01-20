@@ -9,8 +9,14 @@ const contact = () => {
   return (
     <div className="bg-black text-white custom-img2 w-full bg-fill md:bg-contain">
       <Head>
-        <title>Sky Mastering</title>
-        <meta name="Sky Mastering App" content="Created by Pedro Ferreira" />
+        <title>
+          Sky Audio Mastering - Contact us by filling in the form on this page
+        </title>
+        <meta
+          name="description"
+          content="Sky Audio Mastering - Contact Form"
+          key="desc"
+        />
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero

@@ -15,7 +15,12 @@ const BandCampImg = () => {
               className="relative top-0 left-0 right-0 bottom-0 cursor-pointer hover:animate-pulse"
             >
               <Link href={client.url} target="blank">
-                <Image src={client.image} alt="/" height="360" width="360" />
+                <Image
+                  src={client.image}
+                  alt={`Release Title: ${client.title} Artist: ${client.artist}`}
+                  height="360"
+                  width="360"
+                />
               </Link>
             </div>
           );

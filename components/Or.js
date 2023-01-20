@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const ContactBanner = () => {
+const OrBanner = () => {
   return (
     <div className="h-[11rem] text-white flex justify-center items-center">
       <div className="text-center">
@@ -12,4 +12,4 @@ const ContactBanner = () => {
   );
 };
 
-export default ContactBanner;
+export default OrBanner;

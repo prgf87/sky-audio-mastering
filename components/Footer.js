@@ -4,17 +4,17 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="max-w-screen] bg-black text-white">
+    <div className="max-w-screen bg-gradient-to-t from-black to-black/95 text-white">
       <div className="flex items-center justify-between px-4 pb-4">
         <div className="flex justify-center items-end gap-4 px-4">
           <Link href="https://www.facebook.com/Skyaudiomastering">
             <a className="cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
-              <BsFacebook size={30} />
+              <BsFacebook size={25} />
             </a>
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
             <a className="cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
-              <BsInstagram size={30} />
+              <BsInstagram size={25} />
             </a>
           </Link>
         </div>
