@@ -25,7 +25,7 @@ const about = () => {
       </Head>
       <Hero
         heading={'About'}
-        message="Some information about Kri Samadhi, the man behind Sky Mastering"
+        message="Some information about Kri Samadhi, the man behind Sky Audio Mastering"
       />
       <Slider slides={SliderData} />
       <About />

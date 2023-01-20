@@ -37,7 +37,7 @@ const Navbar = () => {
             style={{ color: `${textColor}` }}
             className="font-bold text-md sm:text-xl md:text-2xl cursor-pointer hover:scale-105 transition transform"
           >
-            Sky Mastering
+            Sky Audio Mastering
           </h1>
         </Link>
         <ul

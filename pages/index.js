@@ -24,7 +24,7 @@ const Home = () => {
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero
-        heading="Welcome to Sky Mastering"
+        heading="Welcome to Sky Audio Mastering"
         message="Specializing in Streaming, Audiophile and Large PA Analog Mastering"
       />
       <Slider slides={SliderData} />
