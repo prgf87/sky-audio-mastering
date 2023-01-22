@@ -4,10 +4,10 @@ import React from 'react';
 const Services = () => {
   return (
     <>
-      <div id="services" className="relative top-[-80px]"></div>
-      <div className="scroll-smooth">
+      <div id="services" className="relative top-[-80px]" />
+      <div className="scroll-smooth bg-gradient-to-b from-transparent via-black to-transparent">
         <div className="max-w-[1240px] min-h-[10rem] mx-auto grid grid-cols-1 font-bold p-2">
-          <div className="mx-auto sm:pl-20 w-full grid text-center border-none md:border-t-2">
+          <div className="mx-auto w-full grid text-center border-none md:border-t-2">
             <div className="p-2">
               <h1 className="text-2xl md:text-3xl font-bold pb-2 pt-4 px-2">
                 Audio Mastering
@@ -18,7 +18,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="min-h-[10rem] mx-auto sm:pl-20 w-full grid text-center border-none md:border-x-2">
+          <div className="min-h-[10rem] mx-auto w-full grid text-center border-none md:border-x-2">
             <div>
               <h1 className="text-2xl md:text-3xl font-bold p-4">Hardware</h1>{' '}
               <div>

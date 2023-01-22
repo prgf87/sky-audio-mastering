@@ -26,6 +26,14 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
 
+  const checkIsOpen = () => {};
+
+  const checkColor = () => {
+    {
+      nav ? setTextColor('#ffffff') : setTextColor('#000000');
+    }
+  };
+
   return (
     <div
       style={{ backgroundColor: `${color}` }}
@@ -67,7 +75,7 @@ const Navbar = () => {
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
-              <BsFacebook size={25} />
+              <BsFacebook size={20} />
             </a>
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
@@ -75,7 +83,7 @@ const Navbar = () => {
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
-              <BsInstagram size={25} />
+              <BsInstagram size={20} />
             </a>
           </Link>
         </div>
@@ -83,12 +91,20 @@ const Navbar = () => {
         {/*Mobile Button */}
         <div
           onClick={handleNav}
-          className="block absolute right-[15px] top-[15px] sm:hidden z-10"
+          className="fixed top-[] right-[0.5rem] sm:hidden z-10"
         >
           {nav ? (
-            <AiOutlineClose size={30} style={{ color: `${textColor}` }} />
+            <AiOutlineClose
+              size={25}
+              style={{ color: `${checkColor}` }}
+              className="sticky-top"
+            />
           ) : (
-            <AiOutlineMenu size={30} style={{ color: `${textColor}` }} />
+            <AiOutlineMenu
+              size={25}
+              style={{ color: `${checkColor}` }}
+              className="sticky-top"
+            />
           )}
         </div>
 
@@ -131,12 +147,12 @@ const Navbar = () => {
                 <div className="flex justify-center items-end gap-4 p-4 ">
                   <Link href="https://www.facebook.com/Skyaudiomastering">
                     <a className="cursor-pointer hover:scale-110 transition transform">
-                      <BsFacebook size={30} />
+                      <BsFacebook size={20} />
                     </a>
                   </Link>
                   <Link href="https://www.instagram.com/skymastering/">
                     <a className="cursor-pointer hover:scale-110 transition transform">
-                      <BsInstagram size={30} />
+                      <BsInstagram size={20} />
                     </a>
                   </Link>
                 </div>
