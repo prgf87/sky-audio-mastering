@@ -27,6 +27,10 @@ html.normal-scroll {
   background-position: 50% 23%;
 }
 
+.submit-btn {
+  @apply px-8 py-2 border p-3 w-1/2 text-white hover:scale-110 transition transform hover:text-gray-300;
+}
+
 video {
   width: 100%;
   height: 100%;

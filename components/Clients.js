@@ -4,7 +4,7 @@ import BandcampImg from '../components/BandCampImg';
 
 const Clients = (clients) => {
   return (
-    <div>
+    <div className="relative">
       <h1 className="flex justify-center items-center text-3xl p-2 drop-shadow-2xl">
         Recent Clients
       </h1>

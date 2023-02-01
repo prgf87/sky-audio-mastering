@@ -13,6 +13,15 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  if (typeof document !== 'undefined') {
+    const body = document.querySelector('body');
+    if (nav === true) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  }
+
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
@@ -26,16 +35,8 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
 
-  const checkIsOpen = () => {};
-
-  const checkColor = () => {
-    {
-      nav ? setTextColor('#ffffff') : setTextColor('#000000');
-    }
-  };
-
   return (
-    <div
+    <header
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in-out duration-300"
     >
@@ -96,13 +97,19 @@ const Navbar = () => {
           {nav ? (
             <AiOutlineClose
               size={25}
-              style={{ color: `${checkColor}` }}
+              style={() => {
+                if (nav) {
+                  {
+                    color: `${textColor}`;
+                  }
+                }
+              }}
               className="sticky-top"
             />
           ) : (
             <AiOutlineMenu
               size={25}
-              style={{ color: `${checkColor}` }}
+              style={{ color: `${textColor}` }}
               className="sticky-top"
             />
           )}
@@ -161,7 +168,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

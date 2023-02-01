@@ -1,5 +1,4 @@
 import React from 'react';
-import Services from './Services';
 
 const ContactForm = () => {
   return (
@@ -27,10 +26,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-3xl md:text-5xl font-bold text-center pt-8">
-        Our Services
-      </h1>
-      <Services />
     </div>
   );
 };
