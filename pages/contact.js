@@ -10,10 +10,10 @@ const contact = () => {
   return (
     <div className="bg-black text-white custom-img2 w-full bg-fill md:bg-contain">
       <Head>
-        <title>Sky Audio Mastering - Contact</title>
+        <title>Sky Mastering - Contact</title>
         <meta
           name="description"
-          content="Sky Audio Mastering - Contact Form"
+          content="Sky Mastering - Contact Form"
           key="desc"
         />
         <link rel="icon" href="/logo.jpg" />
@@ -22,8 +22,6 @@ const contact = () => {
         heading={'Contact'}
         message="Submit the form below to talk to us and obtain a free quote."
       />
-
-      {/* <Contact /> */}
       <ContactForm />
       <RecentClients />
       <Or />

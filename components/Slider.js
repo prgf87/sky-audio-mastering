@@ -25,7 +25,7 @@ const Slider = ({ slides }) => {
         <FaArrowCircleLeft
           onClick={prevSlide}
           size={50}
-          className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
+          className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80 h-5 w-5 sm:w-10 sm:h-10"
         />
         {SliderData.map((slide, index) => {
           return (
@@ -53,7 +53,7 @@ const Slider = ({ slides }) => {
         <FaArrowCircleRight
           onClick={nextSlide}
           size={50}
-          className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
+          className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80 h-5 w-5 sm:w-10 sm:h-10"
         />
       </div>
     </div>

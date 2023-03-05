@@ -44,14 +44,14 @@ const Navbar = () => {
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold text-md sm:text-xl md:text-2xl cursor-pointer hover:scale-105 transition transform"
+            className="font-bold text-lg sm:text-xl md:text-2xl cursor-pointer hover:scale-105 transition transform"
           >
-            Sky Audio Mastering
+            Sky Mastering
           </h1>
         </Link>
         <ul
           style={{ color: `${textColor}` }}
-          className="hidden sm:flex lg:text-xl"
+          className="hidden sm:flex text-sm lg:text-xl"
         >
           <li className="p-2 hover:scale-110 hover:text-gray-500 transition transform">
             <Link href="/">Home</Link>

@@ -13,18 +13,18 @@ const Home = () => {
     <div className="bg-black text-white custom-img2 w-full bg-fill md:bg-contain">
       <Head>
         <title>
-          Sky Audio Mastering - Asheville, North Carolina - Audio Mixing and
-          Mastering Services
+          Sky Mastering - Asheville, North Carolina - Audio Mixing and Mastering
+          Services
         </title>
         <meta
           name="description"
-          content="Sky Audio Mastering - Professional Audio Mixing and Mastering Service in Asheville, North Carolina. Specializing in Streaming, Audiophile and Large PA Analog Mastering"
+          content="Sky Mastering - Professional Audio Mixing and Mastering Service in Asheville, North Carolina. Specializing in Streaming, Audiophile and Large PA Analog Mastering"
           key="desc"
         />
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero
-        heading="Welcome to Sky Audio Mastering"
+        heading="Welcome to Sky Mastering"
         message="Specializing in Streaming, Audiophile and Large PA Analog Mastering"
       />
       <Slider slides={SliderData} />
