@@ -13,19 +13,19 @@ const about = () => {
     <div className="bg-black text-white custom-img2 w-full bg-fill md:bg-contain">
       <Head>
         <title>
-          Sky Mastering - About Sky Mastering and the brains behind the
-          operation - Kri Samadhi
+          Sky Audio Mastering - About Sky Audio Mastering and the brains behind
+          the operation - Kri Samadhi
         </title>
         <meta
           name="description"
-          content="Sky Mastering - About Sky Mastering and the brains behind the operation - Kri Samadhi"
+          content="Sky Audio Mastering - About Sky Audio Mastering and the brains behind the operation - Kri Samadhi"
           key="desc"
         />
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Hero
         heading={'About'}
-        message="Some information about Kri Samadhi, the man behind Sky Mastering"
+        message="Some information about Kri Samadhi, the man behind Sky Audio Mastering"
       />
       <Slider slides={SliderData} />
       <About />

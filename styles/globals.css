@@ -4,15 +4,11 @@
 
 html {
   font-family: 'Comfortaa', cursive, sans-serif;
-  scroll-behavior: smooth;
-}
-
-html.normal-scroll {
-  scroll-behavior: auto;
 }
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
