@@ -89,8 +89,8 @@ const ContactForm = () => {
           Let's work together
         </h1>
         <p className="max-w-xl mx-auto text-md md:text-xl font-bold text-center py-10">
-          To contact Kri at Sky Mastering, please send a message by filling in
-          the form below
+          To contact Kri at Sky Audio Mastering, please send a message by
+          filling in the form below
         </p>
 
         <form

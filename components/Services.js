@@ -44,7 +44,7 @@ const Services = () => {
             height={1792}
             width={1792}
             className="object-cover"
-            alt="Background Hero Image - Kri Samadhi - Sky Mastering"
+            alt="Background Hero Image - Kri Samadhi - Sky Audio Mastering"
           />
         </div>
         <div className="max-w-[1240px] grid grid-cols-1 mx-auto text-center px-2 lg:px-6">
