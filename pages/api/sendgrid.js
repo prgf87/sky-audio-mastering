@@ -32,7 +32,7 @@ async function sendEmail(req, res) {
               <p>${req.body.message}</p>
               <br>
               </div>
-              <img src="https://www.skyaudiomastering.com/logo.jpg" class="logo-image" style="height: 55px;width: 120px;border-radius: 5px;overflow: hidden;">
+              <img src="https://www.skyaudiomastering.com/logo.jpg" class="logo-image" style="height: 103px;width: 103px;border-radius: 5px;overflow: hidden;">
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">With my very best regards,<br>Pedro Ferreira<br>Director || Lead Developer<br>+44 (0) 7472097891<br>globalwebsystems.official@gmail.com<br>Global Web Systems - UK</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">                
                 <a href="https://github.com/prgf87/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>

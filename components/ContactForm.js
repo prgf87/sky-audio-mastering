@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useForm } from 'react-hook-form';
+// import { useForm } from 'react-hook-form';
 
 const ContactForm = () => {
   const recaptchaRef = useRef();
@@ -8,10 +8,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const {
-    register,
-    formState: { errors },
-  } = useForm();
+  const [buttonText, setButtonText] = useState('Send message');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +31,18 @@ const ContactForm = () => {
       if (response.ok) {
         console.log('****User Validated Correctly*****');
         console.log('Response: ', response);
+        if (message.length <= 30 || message.length > 500) {
+          alert('Please input a message between 30 and 500 characters long');
+          setButtonText('Try Again');
+          setEmail('');
+          setMessage('');
+          setName('');
+          return;
+        }
+        setEmail('');
+        setMessage('');
+        setName('');
+        setButtonText('Sending...');
         const res = await fetch('/api/sendgrid', {
           body: JSON.stringify({
             name: name,
@@ -49,20 +58,26 @@ const ContactForm = () => {
         const { error } = await res.json();
         if (error) {
           console.log(error);
-
+          setShowSuccessMessage(false);
+          setShowFailureMessage(true);
           return;
         }
-
+        // setShowSuccessMessage(true);
+        // setShowFailureMessage(false);
+        setButtonText('Sent');
         console.log('*** Message Sent! ***');
-        console.log(res);
+        // console.log(res);
       } else {
-        const error = await res.json();
-        throw new Error(error.message);
+        // const error = await res.json();
+        // throw new Error(error.message);
       }
     } catch (error) {
       alert(error?.message || 'Something went wrong');
     } finally {
       recaptchaRef.current.reset();
+      setTimeout(() => {
+        setButtonText('Send Message');
+      }, 1500);
     }
   };
 
@@ -87,80 +102,59 @@ const ContactForm = () => {
             <label>
               <span className="text-gray-500"></span>
               <input
-                type="name"
-                {...register('name', {
-                  required: 'Please enter your name',
-                  minLength: {
-                    value: 5,
-
-                    message: 'Please enter at least 4 characters',
-                  },
-                })}
+                id="name"
+                type="text"
                 name="name"
+                value={name}
+                required
+                minLength={6}
+                onChange={(e) => {
+                  setName(e?.target?.value);
+                }}
                 placeholder="Your Name"
                 className="border shadow-lg p-3 w-full"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
               />
             </label>
-            {errors.name && (
-              <div className="text-red-500 ">{errors.name.message}</div>
-            )}
+
             <label>
               <input
+                id="email"
                 type="email"
-                {...register('email', {
-                  required: 'Please enter email',
-                  pattern: {
-                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
-                    message: 'Please enter valid email',
-                  },
-                })}
                 name="email"
-                className="border shadow-lg p-3 w-full"
-                placeholder="youremail@example.com"
                 value={email}
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 onChange={(e) => {
-                  setEmail(e.target.value);
+                  setEmail(e?.target?.value);
                 }}
+                placeholder="Your Email"
+                className="border shadow-lg p-3 w-full"
               />
             </label>
-            {errors.email && (
-              <div className="text-red-500 ">{errors.email.message}</div>
-            )}
           </div>
           <div>
             <label>
               <textarea
+                id="message"
                 type="text"
                 name="message"
-                {...register('message', {
-                  required: 'Please enter your message',
-                  minLength: {
-                    value: 20,
-                    message: 'Please enter at least 20 characters',
-                  },
-                })}
-                className="border shadow-lg p-3 w-full"
-                rows="12"
-                cols="30"
-                placeholder="Place your message here"
                 value={message}
+                required
+                minLength={30}
+                maxLength={500}
+                rows="12"
+                placeholder="Place your message here"
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
+                className="border shadow-lg p-3 w-full"
               />
             </label>
-            {errors.message && (
-              <div className="text-red-500 ">{errors.message.message}</div>
-            )}
           </div>
 
           <div className="flex justify-center items-center mt-3">
             <button type="submit" value="Submit" className="submit-btn">
-              Send Message
+              {buttonText}
             </button>
           </div>
           <ReCAPTCHA

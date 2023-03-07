@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import Hero from '../components/Hero';
-import Contact from '../components/Contact';
 import RecentClients from '../components/Clients';
 import Or from '../components/Or';
 import ContactForm from '../components/ContactForm';
