@@ -38,13 +38,13 @@ const Services = () => {
             </div>{' '}
           </div>
         </div>
-        <div className="my-6 grid m-auto h-[15rem] md:h-[20rem] lg:h-[30rem]">
+        <div className="my-6 grid m-auto h-[10rem] lg:h-[20rem]">
           <Image
             src="/images/hero6.jpg"
-            height={440.5}
-            width={440.5}
+            height={1792}
+            width={1792}
             className="object-cover"
-            alt="Background Hero Image - Kri Samadhi - Sky Audio Mastering"
+            alt="Background Hero Image - Kri Samadhi - Sky Mastering"
           />
         </div>
         <div className="max-w-[1240px] grid grid-cols-1 mx-auto text-center px-2 lg:px-6">
