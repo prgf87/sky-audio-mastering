@@ -29,8 +29,6 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        console.log('****User Validated Correctly*****');
-        console.log('Response: ', response);
         if (message.length <= 30 || message.length > 500) {
           alert('Please input a message between 30 and 500 characters long');
           setButtonText('Try Again');
@@ -57,7 +55,6 @@ const ContactForm = () => {
 
         const { error } = await res.json();
         if (error) {
-          console.log(error);
           setShowSuccessMessage(false);
           setShowFailureMessage(true);
           return;
@@ -65,8 +62,6 @@ const ContactForm = () => {
         // setShowSuccessMessage(true);
         // setShowFailureMessage(false);
         setButtonText('Sent');
-        console.log('*** Message Sent! ***');
-        // console.log(res);
       } else {
         // const error = await res.json();
         // throw new Error(error.message);
