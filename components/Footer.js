@@ -21,7 +21,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-center p-4 text-sm sm:text-lg cursor-pointer hover:text-gray-500 hover:scale-110 transition-transform">
           <p>
-            <a href="/">Sky Audio Mastering ©</a>
+            <a href="/">Sky Mastering ©</a>
           </p>
         </div>
       </div>
