@@ -1,13 +1,27 @@
-import React from 'react';
-import Button from './Button';
+import { CldVideoPlayer } from "next-cloudinary";
+import React from "react";
+import Button from "./Button";
 
 const Hero = ({ heading, message }) => {
   return (
     <header>
       <div className="flex items-center justify-center h-screen mb-4 bg-center bg-cover">
-        <video muted playsInline autoPlay loop width="100%">
+        {/* <video muted playsInline autoPlay loop width="100%">
           <source src="/video/skymaster5.mov" type="video/mp4" />
-        </video>
+        </video> */}
+
+        <CldVideoPlayer
+          id="video-player"
+          width="1920"
+          height="1080"
+          src="skymaster"
+          type="video/mp4"
+          muted
+          playsInline
+          autoPlay
+          loop
+          className="min-h-full min-w-screen object-cover"
+        />
 
         {/*Overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
