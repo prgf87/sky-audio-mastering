@@ -21,7 +21,7 @@ const Slider = ({ slides }) => {
   return (
     <div id="gallery" className="max-w-[1240px] mx-auto pt-[10px]">
       <h1 className="text-3xl font-bold flex justify-center p-2">Gallery</h1>
-      <div className="relative flex text-center">
+      <div className=" pt-4 relative flex text-center justify-center">
         <FaArrowCircleLeft
           onClick={prevSlide}
           size={50}
@@ -31,11 +31,11 @@ const Slider = ({ slides }) => {
           return (
             <div
               key={index}
-              className={
+              className={`${
                 index === current
-                  ? 'opacity-[1] ease-in-out duration-1000'
+                  ? 'opacity-[1] ease-in-out duration-500'
                   : 'opacity-0'
-              }
+              }`}
             >
               {index === current && (
                 <Image
@@ -45,6 +45,7 @@ const Slider = ({ slides }) => {
                   height="900"
                   objectFit="contain"
                   objectPosition={slide.position}
+                  className="h-[500px] w-auto"
                 />
               )}
             </div>

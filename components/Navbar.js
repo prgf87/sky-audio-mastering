@@ -63,20 +63,17 @@ const Navbar = () => {
           className="flex justify-center items-end gap-4 px-4"
         >
           <Link href="https://www.facebook.com/Skyaudiomastering">
-            <a
-              className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
-              target="blank"
-            >
+            <div className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform">
               <BsFacebook size={25} />
-            </a>
+            </div>
           </Link>
           <Link href="https://www.instagram.com/skymastering/">
-            <a
+            <div
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
               <BsInstagram size={25} />
-            </a>
+            </div>
           </Link>
         </div>
 
@@ -130,14 +127,14 @@ const Navbar = () => {
               <li>
                 <div className="flex justify-center items-end gap-4 p-4 ">
                   <Link href="https://www.facebook.com/Skyaudiomastering">
-                    <a className="cursor-pointer hover:scale-110 transition transform">
+                    <div className="cursor-pointer hover:scale-110 transition transform">
                       <BsFacebook size={30} />
-                    </a>
+                    </div>
                   </Link>
                   <Link href="https://www.instagram.com/skymastering/">
-                    <a className="cursor-pointer hover:scale-110 transition transform">
+                    <div className="cursor-pointer hover:scale-110 transition transform">
                       <BsInstagram size={30} />
-                    </a>
+                    </div>
                   </Link>
                 </div>
               </li>
