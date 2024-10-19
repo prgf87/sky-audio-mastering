@@ -71,21 +71,18 @@ const Navbar = () => {
           style={{ color: `${textColor}` }}
           className="flex justify-center items-end gap-4 px-4"
         >
-          <Link href="https://www.facebook.com/Skyaudiomastering">
-            <a
-              className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
-              target="blank"
-            >
-              <BsFacebook size={20} />
-            </a>
+          <Link href="https://www.facebook.com/djkri">
+            <div className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform">
+              <BsFacebook size={25} />
+            </div>
           </Link>
-          <Link href="https://www.instagram.com/skymastering/">
-            <a
+          <Link href="https://www.instagram.com/krisamadhi/">
+            <div
               className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
               target="blank"
             >
-              <BsInstagram size={20} />
-            </a>
+              <BsInstagram size={25} />
+            </div>
           </Link>
         </div>
 
@@ -153,14 +150,14 @@ const Navbar = () => {
               <li>
                 <div className="flex justify-center items-end gap-4 p-4 ">
                   <Link href="https://www.facebook.com/Skyaudiomastering">
-                    <a className="cursor-pointer hover:scale-110 transition transform">
-                      <BsFacebook size={20} />
-                    </a>
+                    <div className="cursor-pointer hover:scale-110 transition transform">
+                      <BsFacebook size={30} />
+                    </div>
                   </Link>
                   <Link href="https://www.instagram.com/skymastering/">
-                    <a className="cursor-pointer hover:scale-110 transition transform">
-                      <BsInstagram size={20} />
-                    </a>
+                    <div className="cursor-pointer hover:scale-110 transition transform">
+                      <BsInstagram size={30} />
+                    </div>
                   </Link>
                 </div>
               </li>

@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
 import Slider from '../components/Slider';
-import { SliderData } from '../components/SliderData';
 import Clients from '../components/Clients';
-import { ClientsData } from '../components/ClientsData';
 import Services from '../components/Services';
 import ContactBanner from '../components/ContactBanner';
 import Or from '../components/Or';
+import { SliderData } from '../data/SliderData';
+import { ClientsData } from '../data/ClientsData';
 
 const Home = () => {
   return (

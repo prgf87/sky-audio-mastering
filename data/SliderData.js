@@ -1,39 +1,38 @@
 export const SliderData = [
   {
-    image: '/images/hero4.jpg',
+    image: 'hero4_skatod',
     position: '50% 18%',
   },
   {
-    image: '/images/hero1.jpg',
+    image: 'hero1_c9snhl',
     position: '50% 50%',
   },
   {
-    image: '/images/hero3.jpg',
+    image: 'hero3_jujcu3',
     position: '50% 25%',
   },
   {
-    image: '/images/hero5.jpg',
+    image: 'hero5_vtteai',
     position: '50% 98%',
   },
   {
-    image: '/images/hero6.jpg',
+    image: 'hero6_crucys',
     position: '50% 30%',
   },
   {
-    image: '/images/gallery2.jpg',
+    image: 'gallery2_jqyfzp',
     position: '50% 50%',
   },
   {
-    image: '/images/gallery3.jpg',
+    image: 'gallery3_gyqqzj',
     position: '50% 45%',
   },
   {
-    image: '/images/gallery4.jpg',
+    image: 'gallery4_g2ewir',
     position: '50% 100%',
   },
-
   {
-    image: '/images/gallery6.jpg',
+    image: 'gallery6_x87nmc',
     position: '50% 50%',
   },
 ];
