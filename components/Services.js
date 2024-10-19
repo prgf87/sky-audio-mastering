@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
 import React from 'react';
 
 const Services = () => {
@@ -39,16 +39,16 @@ const Services = () => {
           </div>
         </div>
         <div className="my-6 grid m-auto h-[15rem] md:h-[20rem] lg:h-[30rem]">
-          <Image
-            src="/images/hero6.jpg"
-            height={440.5}
-            width={440.5}
-            className="object-cover"
+          <CldImage
+            src="hero6_crucys"
+            height={2060}
+            width={3840}
+            className="object-cover w-full h-[15rem] md:h-[20rem] lg:h-[30rem]"
             alt="Background Hero Image - Kri Samadhi - Sky Audio Mastering"
           />
         </div>
         <div className="max-w-[1240px] grid grid-cols-1 mx-auto text-center px-2 lg:px-6">
-          <div className="pt-6 px-2 lg:px-6 border-none md:border-x-2">
+          <div className="pt-6 px-2 lg:px-6 border-none md:border-x-2 ">
             <h1 className="text-2xl lg:text-4xl font-bold p-2 pb-2">Prices</h1>
             <div className="p-2">
               <h2 className="text-lg lg:text-2xl font-bold">

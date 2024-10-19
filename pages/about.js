@@ -2,11 +2,11 @@ import Head from 'next/head';
 import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import RecentClients from '../components/Clients';
+import Clients from '../components/Clients';
 import Slider from '../components/Slider';
 import ContactBanner from '../components/ContactBanner';
-import { SliderData } from '../components/SliderData';
 import Or from '../components/Or';
+import { SliderData } from '../data/SliderData';
 
 const about = () => {
   return (
@@ -30,7 +30,7 @@ const about = () => {
       <Slider slides={SliderData} />
       <About />
       <ContactBanner />
-      <RecentClients />
+      <Clients />
       <Or />
     </div>
   );

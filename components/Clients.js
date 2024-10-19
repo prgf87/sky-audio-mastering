@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
-import BandcampImg from '../components/BandCampImg';
+import BandcampImages from '../components/BandCampImg';
 
 const Clients = (clients) => {
   return (
@@ -10,7 +9,7 @@ const Clients = (clients) => {
         Recent Clients
       </h1>
       <div>
-        <BandcampImg src={clients} />
+        <BandcampImages src={clients} />
       </div>
       <div className="flex justify-center items-center pt-6">
         <p className="hover:text-white-1000/70 hover:scale-110 transition-transform">

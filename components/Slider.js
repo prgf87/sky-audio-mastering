@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
-import { SliderData } from './SliderData';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { CldImage } from 'next-cloudinary';
+import { SliderData } from '../data/SliderData';
 
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -24,7 +24,7 @@ const Slider = ({ slides }) => {
       <div className=" pt-4 relative flex text-center justify-center">
         <FaArrowCircleLeft
           onClick={prevSlide}
-          size={50}
+          size={45}
           className="absolute top-[45%] left-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
         />
         {SliderData.map((slide, index) => {
@@ -38,14 +38,17 @@ const Slider = ({ slides }) => {
               }`}
             >
               {index === current && (
-                <Image
+                <CldImage
                   src={slide.image}
                   alt="/"
-                  width="1240"
-                  height="900"
+                  height={2060}
+                  width={3840}
+                  sizes="10x10"
                   objectFit="contain"
                   objectPosition={slide.position}
-                  className="h-[500px] w-auto"
+                  className="h-[600px] w-auto"
+                  placeholder="blur"
+                  blurDataURL={slide.image}
                 />
               )}
             </div>
@@ -53,7 +56,7 @@ const Slider = ({ slides }) => {
         })}
         <FaArrowCircleRight
           onClick={nextSlide}
-          size={50}
+          size={45}
           className="absolute top-[45%] right-[30px] text-white/70 cursor-pointer select-none z-[2] hover:scale-110 transition-transform hover:text-white/80"
         />
       </div>
