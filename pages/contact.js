@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import RecentClients from '../components/Clients';
 import Or from '../components/Or';
-import ContactForm from '../components/ContactForm';
+import Contact from '../components/Contact';
 
 const contact = () => {
   return (
@@ -21,7 +21,7 @@ const contact = () => {
         heading={'Contact'}
         message="Submit the form below to talk to us and obtain a free quote."
       />
-      <ContactForm />
+      <Contact />
       <RecentClients />
       <Or />
     </div>

@@ -5,7 +5,8 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 async function sendEmail(req, res) {
   try {
     await sgMail.send({
-      to: process.env.EMAIL_RECIPIENT,
+      // to: process.env.EMAIL_RECIPIENT,
+      to: 'prgf2011@gmail.com',
       from: process.env.ADMIN_EMAIL,
       subject: `[New Lead from Sky Mastering Website]`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

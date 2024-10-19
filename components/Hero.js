@@ -6,7 +6,10 @@ const Hero = ({ heading, message }) => {
     <header>
       <div className="flex items-center justify-center h-screen mb-4 bg-center bg-cover">
         <video muted playsInline autoPlay loop width="100%">
-          <source src="/video/skymaster5.mov" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dzitj9wug/video/upload/v1729009652/skymaster.mp4"
+            type="video/mp4"
+          />
         </video>
 
         {/*Overlay */}

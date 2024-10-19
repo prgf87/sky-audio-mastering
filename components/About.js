@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
@@ -55,29 +56,29 @@ const About = () => {
           <h1 className="text-sm md:text-lg pl-4 pt-4">Links</h1>
           <ul className="pl-4 text-center text-blue-500">
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <a href="https://www.krisamadhi.com/" target="blank">
+              <Link href="https://www.krisamadhi.com/" target="blank">
                 https://www.krisamadhi.com/
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <a href="https://www.soundcloud.com/krisamadhi" target="blank">
+              <Link href="https://www.soundcloud.com/krisamadhi" target="blank">
                 https://www.soundcloud.com/krisamadhi
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <a href="https://www.facebook.com/krisamadhi" target="blank">
+              <Link href="https://www.facebook.com/krisamadhi" target="blank">
                 https://www.facebook.com/krisamadhi
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <a href="https://www.instagram.com/krisamadhi" target="blank">
+              <Link href="https://www.instagram.com/krisamadhi" target="blank">
                 https://www.instagram.com/krisamadhi
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <a href="https://www.touchsamadhi.com" target="blank">
+              <Link href="https://www.touchsamadhi.com" target="blank">
                 https://www.touchsamadhi.com
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
