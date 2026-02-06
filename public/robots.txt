@@ -1,0 +1,11 @@
+# robots.txt for Sky Mastering
+# https://skyaudiomastering.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://skyaudiomastering.com/sitemap.xml
+
+# Disallow admin/api routes if any
+Disallow: /api/
