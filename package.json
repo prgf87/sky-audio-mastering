@@ -1,7 +1,7 @@
 {
   "private": true,
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "scripts": {
     "dev": "next dev",
@@ -19,7 +19,7 @@
     "react-player": "^2.11.0"
   },
   "devDependencies": {
-    "@types/node": "^22.20.4",
+    "@types/node": "^24.0.0",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "autoprefixer": "^10.4.7",
