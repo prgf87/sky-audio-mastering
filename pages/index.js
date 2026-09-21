@@ -117,6 +117,9 @@ const Home = () => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={DEFAULT_IMAGE} />
+        <meta property="og:image:width" content="206" />
+        <meta property="og:image:height" content="206" />
+        <meta property="og:image:alt" content="Sky Mastering logo" />
         <meta property="og:site_name" content={SITE_NAME} />
         <meta property="og:locale" content="en_US" />
 
