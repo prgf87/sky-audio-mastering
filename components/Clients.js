@@ -13,7 +13,7 @@ const Clients = (clients) => {
       </div>
       <div className="flex justify-center items-center pt-6">
         <p className="hover:text-white-1000/70 hover:scale-110 transition-transform">
-          <Link href="https://www.krisamadhi.com/clients/" target="blank">
+          <Link href="https://www.krisamadhi.com/clients/" target="_blank" rel="noopener noreferrer">
             <button className=" px-2 md:px-8 py-2 border text-sm md:text-xl ">
               Click here for more clients
             </button>
