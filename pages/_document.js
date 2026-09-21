@@ -12,8 +12,8 @@ export default function Document() {
           rel="stylesheet"
         />
         {/* Default favicon */}
-        <link rel="icon" href="/logo.jpg" />
-        <link rel="apple-touch-icon" href="/logo.jpg" />
+        <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+        <link rel="apple-touch-icon" type="image/jpeg" href="/logo.jpg" />
         {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#000000" />
         {/* Preconnect to Cloudinary for faster image loading */}
