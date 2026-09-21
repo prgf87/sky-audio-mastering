@@ -56,27 +56,27 @@ const About = () => {
           <h1 className="text-sm md:text-lg pl-4 pt-4">Links</h1>
           <ul className="pl-4 text-center text-blue-500">
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <Link href="https://www.krisamadhi.com/" target="blank">
+              <Link href="https://www.krisamadhi.com/" target="_blank" rel="noopener noreferrer">
                 https://www.krisamadhi.com/
               </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <Link href="https://www.soundcloud.com/krisamadhi" target="blank">
+              <Link href="https://www.soundcloud.com/krisamadhi" target="_blank" rel="noopener noreferrer">
                 https://www.soundcloud.com/krisamadhi
               </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <Link href="https://www.facebook.com/krisamadhi" target="blank">
+              <Link href="https://www.facebook.com/krisamadhi" target="_blank" rel="noopener noreferrer">
                 https://www.facebook.com/krisamadhi
               </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <Link href="https://www.instagram.com/krisamadhi" target="blank">
+              <Link href="https://www.instagram.com/krisamadhi" target="_blank" rel="noopener noreferrer">
                 https://www.instagram.com/krisamadhi
               </Link>
             </li>
             <li className="hover:scale-110 transition-transform duration-200 hover:text-blue-300">
-              <Link href="https://www.touchsamadhi.com" target="blank">
+              <Link href="https://www.touchsamadhi.com" target="_blank" rel="noopener noreferrer">
                 https://www.touchsamadhi.com
               </Link>
             </li>

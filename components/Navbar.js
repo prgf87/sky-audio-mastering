@@ -71,16 +71,13 @@ const Navbar = () => {
           style={{ color: `${textColor}` }}
           className="flex justify-center items-end gap-4 px-4"
         >
-          <Link href="https://www.facebook.com/djkri">
+          <Link href="https://www.facebook.com/djkri" target="_blank" rel="noopener noreferrer">
             <div className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform">
               <BsFacebook size={25} />
             </div>
           </Link>
-          <Link href="https://www.instagram.com/krisamadhi/">
-            <div
-              className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform"
-              target="blank"
-            >
+          <Link href="https://www.instagram.com/krisamadhi/" target="_blank" rel="noopener noreferrer">
+            <div className="cursor-pointer hover:scale-110 hover:text-gray-500 transition transform">
               <BsInstagram size={25} />
             </div>
           </Link>
@@ -149,12 +146,12 @@ const Navbar = () => {
               </li>
               <li>
                 <div className="flex justify-center items-end gap-4 p-4 ">
-                  <Link href="https://www.facebook.com/Skyaudiomastering">
+                  <Link href="https://www.facebook.com/Skyaudiomastering" target="_blank" rel="noopener noreferrer">
                     <div className="cursor-pointer hover:scale-110 transition transform">
                       <BsFacebook size={30} />
                     </div>
                   </Link>
-                  <Link href="https://www.instagram.com/skymastering/">
+                  <Link href="https://www.instagram.com/skymastering/" target="_blank" rel="noopener noreferrer">
                     <div className="cursor-pointer hover:scale-110 transition transform">
                       <BsInstagram size={30} />
                     </div>

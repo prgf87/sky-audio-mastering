@@ -12,7 +12,8 @@ const BandCampImg = () => {
           return (
             <Link
               href={client.url}
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               className="relative top-0 left-0 right-0 bottom-0 cursor-pointer hover:animate-pulse"
             >
